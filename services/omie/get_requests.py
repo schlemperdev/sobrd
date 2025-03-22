@@ -1,5 +1,5 @@
 import requests
-from config import HEADERS, OMIE_URL, OMIE_APP_KEY, OMIE_APP_SECRET
+from config import OMIE_HEADERS, OMIE_URL, OMIE_APP_KEY, OMIE_APP_SECRET
 
 def get_omie_clientes(cpf_cnpj):
     endpoint = "geral/clientes/"
@@ -13,7 +13,7 @@ def get_omie_clientes(cpf_cnpj):
         "param": [clientesFiltro]
     }
 
-    response = requests.post(url, headers=HEADERS, json=payload)
+    response = requests.post(url, headers=OMIE_HEADERS, json=payload)
 
     if response.status_code != 200:
         return {
