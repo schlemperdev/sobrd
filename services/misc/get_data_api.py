@@ -1,5 +1,7 @@
 import requests
-from ...config import CNPJ_URL, CEP_URL, IBGE_UF_URL
+
+from config import CEP_URL, CNPJ_URL, IBGE_UF_URL
+
 
 def get_data_from_cnpj(cpf_cnpj):
     url = CNPJ_URL
@@ -9,8 +11,10 @@ def get_data_from_cnpj(cpf_cnpj):
 
     if response.status_code != 200:
         return {
-            "error": (f"Requisição à API do CNPJ falhou: {response.json().get('title')}."),
-            "status code": (f"Código de status: {response.status_code}.")
+            "error": (
+                f"Requisição à API do CNPJ falhou: {response.json().get('title')}."
+            ),
+            "status code": (f"Código de status: {response.status_code}."),
         }
 
     return response.json()
@@ -25,7 +29,7 @@ def get_address_from_cep(cep):
     if response.status_code != 200:
         return {
             "error": ("Requisição à API do CEP falhou."),
-            "status_code": (f"Código de status: {response.status_code}.")
+            "status_code": (f"Código de status: {response.status_code}."),
         }
 
     return response.json()
@@ -39,9 +43,10 @@ def get_state_name_from_uf(uf):
 
     if response.status_code != 200:
         return {
-            "error": (f"Requisição à API do IBGE falhou: {response.json().get('message')}"),
-            "status_code": (f"Código de status: {response.status_code}.")
+            "error": (
+                f"Requisição à API do IBGE falhou: {response.json().get('message')}"
+            ),
+            "status_code": (f"Código de status: {response.status_code}."),
         }
 
     return response.json()
-

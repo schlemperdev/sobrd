@@ -1,25 +1,25 @@
-CPF_LEN = 11
-SERVICOS = [
-    "CQ Intra",
-    "LR Intra",
-    "EPI"
-]
+from config import CPF_LEN
+
+SERVICOS = ["CQ Intra", "LR Intra", "EPI"]
+
 
 def clean_null(data):
-    clean_data = {key: value for key, value in data.items() if value and str(value).strip()}
+    clean_data = {
+        key: value for key, value in data.items() if value and str(value).strip()
+    }
     return clean_data
 
 
 def selecionar_servicos():
     servicos_selecionados = []
 
-    print ("\nSelecione os serviços:")
+    print("\nSelecione os serviços:")
     for servicos in enumerate(SERVICOS, start=1):
         print(servicos)
 
     selecao = input("\nDigite o numero dos servicos desejados, separados por vírgula: ")
     try:
-        indices = [int(x.strip()) -1 for x in selecao.split(",")]
+        indices = [int(x.strip()) - 1 for x in selecao.split(",")]
 
         for index in indices:
             if index < 0 or index >= len(SERVICOS):
@@ -33,7 +33,7 @@ def selecionar_servicos():
     except ValueError:
         print("Input inválida.")
 
-    return servicos_selecionados 
+    return servicos_selecionados
 
 
 def main_form(razao_social=None, cep=None, numero_endereco=None):
@@ -54,7 +54,7 @@ def main_form(razao_social=None, cep=None, numero_endereco=None):
         "numero_endereco": numero_endereco,
         "email_cliente": email_cliente,
         "fone_cliente": fone_cliente,
-        "servicos_selecionados": servicos_selecionados
+        "servicos_selecionados": servicos_selecionados,
     }
 
     return clean_null(dados_orcamento)
