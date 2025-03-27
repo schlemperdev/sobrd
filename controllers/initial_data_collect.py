@@ -4,7 +4,7 @@ from utils.data_manipulation import salvar_json
 
 
 def collect_data_with_form_input(dados_form=DADOS_TESTE):
-    cpf_cnpj = dados_form.get("CPF")  # teste
+    cpf_cnpj = dados_form.get("CNPJ")  # teste
 
     full_data = []
     filename = "repos/json/full_data.json"

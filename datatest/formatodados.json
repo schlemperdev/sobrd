@@ -1,0 +1,10 @@
+[
+    "id_omie": "codigo_cliente_omie"
+    "id_spotter": "id"
+    "razao_social": [
+        {"omie": "razao_social"},
+        {"spotter": ["name", "lead"]},
+        {"cnpj_api": "razao_social"}
+    ],
+
+]

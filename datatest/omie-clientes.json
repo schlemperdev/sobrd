@@ -1,0 +1,115 @@
+[
+  {
+    "omie-listar": {
+      "clientes_cadastro": {
+        "bairro": "JOAO PAULO",
+        "bloquear_faturamento": "N",
+        "cep": "88030000",
+        "cidade": "FLORIANOPOLIS (SC)",
+        "cidade_ibge": "4205407",
+        "cnpj_cpf": "37.319.901/0001-50",
+        "codigo_cliente_integracao": "",
+        "codigo_cliente_omie": 1516698536,
+        "codigo_pais": "1058",
+        "complemento": "EDIF CELTA",
+        "dadosBancarios": {
+          "agencia": "",
+          "cChavePix": "",
+          "codigo_banco": "",
+          "conta_corrente": "",
+          "doc_titular": "",
+          "nome_titular": "",
+          "transf_padrao": "N"
+        },
+        "email": "renansch95@gmail.com",
+        "endereco": "ROD JOSE CARLOS DAUX",
+        "enderecoEntrega": {},
+        "endereco_numero": "600",
+        "enviar_anexos": "N",
+        "estado": "SC",
+        "exterior": "N",
+        "inativo": "N",
+        "info": {
+          "cImpAPI": "N",
+          "dAlt": "28/08/2020",
+          "dInc": "28/08/2020",
+          "hAlt": "17:31:07",
+          "hInc": "16:25:34",
+          "uAlt": "P000040556",
+          "uInc": "P000040556"
+        },
+        "inscricao_estadual": "",
+        "inscricao_municipal": "",
+        "nome_fantasia": "RENAN SCHLEMPER",
+        "pessoa_fisica": "N",
+        "razao_social": "RENAN SCHLEMPER 09881866910",
+        "recomendacoes": {
+          "gerar_boletos": "N"
+        },
+        "tags": [
+          {
+            "tag": "Fornecedor"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "omie-cadastrar": {
+      "codigo_cliente_omie": "integer",
+      "codigo_cliente_integracao": "string60",
+      "razao_social": "string60",
+      "cnpj_cpf": "string20",
+      "nome_fantasia": "string100",
+      "telefone1_ddd": "string5",
+      "telefone1_numero": "string15",
+      "contato": "string100",
+      "endereco": "string60",
+      "endereco_numero": "string60",
+      "bairro": "string60",
+      "complemento": "string60",
+      "estado": "string2",
+      "cidade": "string40",
+      "cep": "string10",
+      "codigo_pais": "string4",
+      "separar_endereco": "string1",
+      "pesquisar_cep": "string1",
+      "telefone2_ddd": "string5",
+      "telefone2_numero": "string15",
+      "fax_ddd": "string5",
+      "fax_numero": "string15",
+      "email": "string500",
+      "homepage": "string100",
+      "inscricao_estadual": "string20",
+      "inscricao_municipal": "string20",
+      "inscricao_suframa": "string20",
+      "optante_simples_nacional": "string1",
+      "tipo_atividade": "string1",
+      "cnae": "string7",
+      "produtor_rural": "string1",
+      "contribuinte": "string1",
+      "observacao": "text",
+      "obs_detalhadas": "text",
+      "recomendacao_atraso": "string2",
+      "tags": "tagsArray",
+      "pessoa_fisica": "string1",
+      "exterior": "string1",
+      "logradouro": "string6",
+      "importado_api": "string1",
+      "bloqueado": "string1",
+      "cidade_ibge": "string7",
+      "valor_limite_credito": "decimal",
+      "bloquear_faturamento": "string1",
+      "recomendacoes": "recomendacoes",
+      "enderecoEntrega": "enderecoEntrega",
+      "nif": "string100",
+      "documento_exterior": "string20",
+      "inativo": "string1",
+      "dadosBancarios": "dadosBancarios",
+      "caracteristicas": "caracteristicasArray",
+      "enviar_anexos": "string1",
+      "info": "info",
+      "bloquear_exclusao": "string1"
+    }
+  }
+]

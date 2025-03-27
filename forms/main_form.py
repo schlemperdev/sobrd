@@ -1,13 +1,5 @@
-from config import CPF_LEN
-
-SERVICOS = ["CQ Intra", "LR Intra", "EPI"]
-
-
-def clean_null(data):
-    clean_data = {
-        key: value for key, value in data.items() if value and str(value).strip()
-    }
-    return clean_data
+from config import CPF_LEN, SERVICOS
+from utils.data_manipulation import clean_null
 
 
 def selecionar_servicos():

@@ -1,0 +1,72 @@
+{
+  "empresa-listar": {
+    "@odata.context": "https://api.exactspotter.com/v3/$metadata#Organization",
+    "value": [
+      {
+        "id": 4187,
+        "name": "Nome da empresa",
+        "registerDate": "2015-04-09T19:30:33.1151616Z",
+        "updateDate": "2015-05-16T18:16:21.528629Z",
+        "publicLink": "https://app.exactspotter.com/public/organizacao/hjlq0ohclhkkx",
+        "website": "https://site.empresa.com/",
+        "cpfCnpj": "",
+        "street": "Nome da Rua do endereço da empresa",
+        "number": "Número do endereço",
+        "complement": "Complemento do endereço",
+        "neighborhood": "Bairro do endereço",
+        "zipCode": "CEP ou Código da região",
+        "city": "Nome da Cidade",
+        "state": "Nome do Estado",
+        "country": "Nome do País",
+        "registrationUserId": 123456,
+        "phones": [
+          {
+            "ddiPhone": "55",
+            "phone": "5548987654321"
+          }
+        ]
+      }
+    ]
+  },
+  "empresa-cadastrar": {
+    "duplicityValidation": true,
+    "organization": {
+      "name": "Referente ao nome da empresa/organização",
+      "userEmail": "usuario@spotter.com.br",
+      "cpfCnpj": "12345678910112",
+      "website": "www.exactsales.com.br",
+      "ddiPhone": "55",
+      "phone": "4830257750",
+      "ddiPhone2": "55",
+      "phone2": "48987654321",
+      "address": "Rod. José Carlos Daux, 5500",
+      "addressComplement": "123456",
+      "zipcode": "88032005",
+      "city": "Florianópolis",
+      "state": "SC",
+      "country": "Brasil",
+      "description": "Qualquer observação que se deseja fazer a respeito da empresa/organização que está sendo inserida.",
+      "customFields": [
+        {
+          "id": "_valordoticket",
+          "value": "150,00"
+        },
+        {
+          "id": "_escolhamultipla",
+          "options": [
+            {
+              "value": "Opção 1"
+            },
+            {
+              "id": 3128
+            },
+            {
+              "id": 3128,
+              "value": "Opção 1"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
